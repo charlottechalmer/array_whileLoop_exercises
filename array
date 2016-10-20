@@ -1,0 +1,66 @@
+Arrays:
+	Can put anything in an array:
+		- number, string, boolean, array, etc
+	
+	If we wanted to console.log:
+
+		console.log(arr3[3]);
+			---> ** count starting from zero in arrays so this would print the array within the array (the offset from the beginning of the array):
+
+			var arr3 = ["hello", true, 3.14, ["hi", "bye"				
+
+	var arr2 = [1, 2, 3, 4, 5];
+
+	arr2[4] = "potato"; // this will overwrite array 2 at index 4;
+
+	arr2 = [1, 2, 3, 4, "potato"];
+
+
+	var myArr = ["a", "b", "c"];
+	myArr.push("potato");
+		//will push "potato" onto the end of the array
+		console.log(myArr);
+			["a", "b", "c", "potato"];
+		console.log(myArr.length);
+			--> will print 4 ** IS THE NUMBER OF ELEMENTS IN THE ARRAY-- the count (1, 2, 3, 4) v the  (0, 1, 2, 3);
+
+	Why arrays are better:
+		"loops"-- 
+				*"for loop" is shorthand for the "while loop"
+		the "while loop"
+			--> "Ask the user for grades until they enter something that is not a number"
+				--> "sum up the grades and then divide by the number of grades"
+					--> "print that as the average grade"
+			--> ** while(//something) {
+						//execute the following
+					}
+		var is_number = true;
+		
+		while(is_number) {
+			var next_grade = prompt("Next grade");
+			next_grade = parseFloat(next_grade);
+		}
+
+		--> if they put in "7", parseFloat will be 7,
+		if they put in "potato", parseFloat will be NaN
+
+		have to add:
+			if(isNaN(next_grade)) {
+				is_number = false;
+			} else {
+				grade.push(next_grade);
+			}
+		}
+
+		--> have to set grade to an empty array and define it outside of the loop so it adds the grade to the array rather than starting a new array
+		--> the loop stops when is_number = false
+		-->
+
+
+
+
+
+
+
+
+
